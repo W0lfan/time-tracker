@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Calendar from './components/calendar';
 import Stats from './components/stats';
 import StartWorkingSession from './components/startWorkingSession';
-import Header from './components/header';
 
 function App() {
 
@@ -18,7 +17,6 @@ function App() {
 
   return (
     <>
-      <Header />  
       <Calendar />
       <StartWorkingSession setUpdate={setUpdate} />
       <Stats update={update} setUpdate={setUpdate} />

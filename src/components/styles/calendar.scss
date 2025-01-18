@@ -66,6 +66,34 @@ body {
             align-items: center;
             justify-content: center;
             width: 100%;
+            &.notes {
+                width: 100%;
+                .stats-row-content {
+                    font-size: 15px;
+                    color: black;
+                    font-weight: normal;
+                    text-align: start;
+                    width: calc(
+                        100% - map-get(
+                            $paddings,
+                            app-second-padding
+                        ) * 2
+                    );
+                    border-radius: map-get(
+                        $radiuses,
+                        app-second-border-radius
+                    );
+                    display: block;
+                    background-color: map-get(
+                        $colors,
+                        app-background-color-darker
+                    );
+                    padding: map-get(
+                        $paddings,
+                        app-second-padding
+                    );
+                }
+            }
             .stats-row-title {
                 font-size: 14px;
                 font-weight: bold;
