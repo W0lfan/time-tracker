@@ -1,0 +1,32 @@
+{
+    "appId": "com.example.app",
+    "appName": "Naflows Time Tracker²",           
+    "webDir": "dist",            
+    "bundledWebRuntime": false,
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 0
+        }
+    },
+    "cordova": {
+        "preferences": {
+            "SplashMaintainAspectRatio": "true",
+            "FadeSplashScreenDuration": "300",
+            "SplashShowOnlyFirstTime": "false",
+            "SplashScreen": "screen",
+            "SplashScreenDelay": "3000"
+        }
+    },
+    "android": {
+        "icon": {
+            "foreground": "resources/android/icon/foreground.png",
+            "background": "resources/android/icon/background.png"
+        }
+    },
+    "ios": {
+        "icon": {
+            "icon": "resources/ios/icon/icon.png"
+        }
+    }
+  }
+  

@@ -11,7 +11,7 @@ const getLocalStorage = () => {
     return {};
 }
 
-const updateLocalStorageInMilliseconds = (date, time) => {
+const updateLocalStorageInMilliseconds = (date: string, time: number) => {
     const t = getLocalStorage();
     if (t[date]) {
         t[date] += time;
@@ -30,7 +30,7 @@ const Stats: React.FC<StatsProps> = ({ update, setUpdate }) => {
 
     const [loc, setLoc] = useState(getLocalStorage());
 
-    const times = {
+    const times: { [key: string]: number } = {
         "30mn" : 30 * 60 * 1000,
         "1h" : 60 * 60 * 1000,
         "2h" : 2 * 60 * 60 * 1000,

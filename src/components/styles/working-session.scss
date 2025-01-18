@@ -1,0 +1,58 @@
+@import '../../../@styling/main.scss';
+
+.working-session {
+    flex-direction: row !important;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: calc(
+        100% - map-get(
+            $paddings,
+            app-first-padding
+        )*2
+    );
+    background-color: map-get(
+        $colors,
+        app-background-color-darker
+    );
+    padding: map-get(
+        $paddings,
+        app-first-padding
+    );
+    .buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .working-session-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    button {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: map-get(
+            $radiuses,
+            app-second-border-radius
+        );
+        border:none;
+        background-color: map-get(
+            $colors,
+            app-primary
+        );
+        color: white;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+}
